@@ -13,7 +13,7 @@
 </style>
 
 <% if !@user_hash['user'].nil? %>
-  <h1>Voici la page profil de l'auteur de potins n°<%= @user_hash['index'] %></h1>
+  <h1>Voici la page profil de l'utilisateur n°<%= @user_hash['index'] %></h1>
   <div>
     <p>Son prénom : <%= @user_hash['user'].first_name %></p>
     <p>Son nom : <%= @user_hash['user'].last_name %></p>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :gossips do
-    resources :comments, only: [:show]
+    resources :comments, except: [:show]
   end
   resources :users, only: [:show] do
     resources :private_messages, only: [:show]
